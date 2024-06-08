@@ -54,7 +54,7 @@ jobs:
           # more customizations can be pasted after this line
 
           # Loop/LoopCore/LoopCoreConstants.swift desc: revise absorbtion times
-          curl https://github.com/quandw/Loop/commit/9233e8deae0eae2fe32e88f29dbe44fad7c5796f.patch | git apply -v --directory=Loop
+          # curl https://github.com/quandw/Loop/commit/9233e8deae0eae2fe32e88f29dbe44fad7c5796f.patch | git apply -v --directory=Loop
 
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
