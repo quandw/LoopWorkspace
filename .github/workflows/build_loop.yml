@@ -284,6 +284,11 @@ jobs:
           # Several patches may be added per submodule.
           # Adding comments (#) may be useful to easily tell the individual patches apart.
 
+   	      # BEGIN apply revise insulin absorbtion times - quanddw/patch-1
+          # Loop/LoopCore/LoopCoreConstants.swift desc: revise absorbtion times 
+          curl https://github.com/quandw/Loop/commit/8d032b2fa4eb6e1b73a4dad0db8a1f245724b55c.patch | git apply -v --directory=Loop
+          # END quandw/patch-1
+
       # Patch Fastlane Match to not print tables
       - name: Patch Match Tables
         run: |
